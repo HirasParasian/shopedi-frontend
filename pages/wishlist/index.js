@@ -55,7 +55,7 @@ const Index = () => {
                   </Col>
                   <Col xs={12} sm={6} lg={4} className='my-auto'>
                     <div className="my-3 my-lg-0 ms-0 ms-lg-5">
-                      <span className={styles.pill}><BsCheck /></span> {data.stock} Stock
+                      <span className={styles.pill}><BsCheck size={20} /></span> {data.stock} Stock
                     </div>
                   </Col>
                   <Col xs={12} sm={12} lg={4} className='my-auto'>
