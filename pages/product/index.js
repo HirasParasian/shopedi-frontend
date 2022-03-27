@@ -191,7 +191,7 @@ const Index = () => {
                 id="name"
                 name="name"
                 aria-describedby="name"
-                className='me-5 py-3 mt-5'
+                className='me-5 py-3 '
                 placeholder='Product Name'
               />
               <Form.Control
@@ -289,14 +289,14 @@ const Index = () => {
                 </div>
               </Col>
               <Col md={3}>
-                <Form onSubmit={onSort}>
+                <Form onSubmit={onSort} className="d-flex flex-row">
                   <Form.Select className='border-0' defaultChecked={""}>
                     <option value={""}>Sort By</option>
                     <option value={"latest"}>Latest Product</option>
                     <option value="expensive">More Expensive</option>
                     <option value="cheap">More Cheap</option>
                   </Form.Select>
-                  <Button type="submit" className='mt-4 px-4' variant="color2" size="sm" active>
+                  <Button type="submit" className='px-4' variant="color2" size="sm" active>
                     &nbsp;Sort
                   </Button>{' '}
                 </Form>
