@@ -80,6 +80,7 @@ const Index = () => {
   }
 
   const onSort = async (event) => {
+    window.scroll(0, 0)
     event.preventDefault();
     const url = () => `/products?brandId=${brand}&minPrice=${minPrice}&maxPrice=${maxPrice}&search=${name}&sort=${sort}&orderBy=${orderBy}&limit=9`
     let name = document.getElementById('name').value;
